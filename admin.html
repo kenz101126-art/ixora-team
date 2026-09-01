@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>IXORA TEAM | Admin</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div class="background"></div>
+
+<div id="loginScreen" class="screen">
+  <form id="loginForm" class="login-card">
+    <a href="index.html" class="back">← IXORA TEAM</a>
+    <p>SECURE ADMIN ACCESS</p>
+    <h1>ADMIN LOGIN</h1>
+    <input id="username" placeholder="Username" required>
+    <input id="password" type="password" placeholder="Password" required>
+    <button type="submit">LOGIN</button>
+    <div id="loginStatus"></div>
+  </form>
+</div>
+
+<div id="dashboard" hidden>
+<header>
+<a href="index.html">← IXORA TEAM</a>
+<h1>ADMIN DASHBOARD</h1>
+<div><button id="refreshButton">REFRESH</button><button id="logoutButton" class="logout">LOGOUT</button></div>
+</header>
+
+<main>
+<section class="stats">
+<article><span id="totalApplications">0</span><p>APPLICATIONS</p></article>
+<article><span id="totalMessages">0</span><p>CHAT MESSAGES</p></article>
+</section>
+
+<section class="panel">
+<h2>MEMBER APPLICATIONS</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>NAME</th><th>AGE</th><th>STATUS</th><th>DATE</th><th>ACTIONS</th></tr></thead>
+<tbody id="applicationsTable"></tbody>
+</table></div>
+</section>
+
+<section class="panel">
+<h2>COMMUNITY CHAT MANAGEMENT</h2>
+<div id="adminMessages"></div>
+</section>
+</main>
+</div>
+<script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>IXORA TEAM | Cycling Community</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="background"></div>
+<header class="navbar">
+  <a href="#home" class="logo">IXORA<span>TEAM</span></a>
+  <nav>
+    <a href="#home">HOME</a><a href="#about">ABOUT</a>
+    <a href="#join">JOIN</a><a href="#chat">CHAT</a>
+    <a href="admin.html" class="admin-button">ADMIN</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="eyebrow">PREMIUM CYCLING COMMUNITY</p>
+    <h1>RIDE WITH<br><span>IXORA TEAM.</span></h1>
+    <p>Ride together, make friends and build a stronger cycling community.</p>
+    <a href="#join" class="main-button">JOIN THE TEAM</a>
+  </div>
+  <div class="bike-stage">
+    <div class="ring ring-one"></div><div class="ring ring-two"></div>
+    <div class="bike-3d">
+      <div class="wheel wheel-left"></div><div class="wheel wheel-right"></div>
+      <div class="frame f1"></div><div class="frame f2"></div>
+      <div class="frame f3"></div><div class="frame f4"></div>
+      <div class="seat"></div><div class="handlebar"></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="content-section">
+<p class="eyebrow">OUR COMMUNITY</p>
+<h2>ONE ROAD. ONE TEAM. <span>ONE PASSION.</span></h2>
+<div class="features">
+<article><div>🚴</div><h3>Ride Together</h3><p>Connect with cyclists and discover new routes.</p></article>
+<article><div>⚡</div><h3>Challenge</h3><p>Push beyond your limits and become stronger.</p></article>
+<article><div>✦</div><h3>Community</h3><p>Build real friendships through cycling.</p></article>
+</div>
+</section>
+
+<section id="join" class="content-section join-section">
+<div class="join-copy">
+<p class="eyebrow">MEMBER REGISTRATION</p>
+<h2>JOIN <span>IXORA TEAM</span></h2>
+<p>Your registration is securely stored in the IXORA TEAM database and can be reviewed by the administrator.</p>
+</div>
+<form id="registrationForm" class="form-card">
+<h3>REGISTER NOW</h3>
+<label>FULL NAME<input id="name" required minlength="2" maxlength="80" placeholder="Enter your name"></label>
+<label>AGE<input id="age" required type="number" min="1" max="100" placeholder="Enter your age"></label>
+<button class="main-button full" type="submit">SUBMIT APPLICATION</button>
+<p id="formStatus" class="status"></p>
+</form>
+</section>
+
+<section id="chat" class="content-section">
+<p class="eyebrow">IXORA COMMUNITY</p>
+<h2>TEAM <span>CHAT</span></h2>
+<div class="chat-box">
+<div id="messages" class="messages"></div>
+<form id="chatForm" class="chat-form">
+<input id="chatName" maxlength="30" placeholder="Your name" required>
+<input id="chatMessage" maxlength="300" placeholder="Write a message..." required>
+<button type="submit">SEND</button>
+</form>
+</div>
+</section>
+</main>
+<footer>© 2026 IXORA TEAM — RIDE BEYOND THE LIMIT</footer>
+<script src="app.js"></script>
+</body>
+</html>
